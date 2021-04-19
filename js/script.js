@@ -5,9 +5,19 @@ var app = new Vue (
     { 
         el: '#root',
         data: {
+
             titleMessage: "Clicca sull' immagine",
-            titleColor: 'red'
-            
+            titleColor: 'red',
+            mioSrc: 'img/mare.jpg',
+
         },
+        methods:{
+
+            click(){
+            
+                this.mioSrc = (this.mioSrc == 'img/mare.jpg') ? 'img/montagna.jpg' : 'img/mare.jpg';
+                
+            }
+        }
     }
 );
